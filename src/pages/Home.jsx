@@ -34,6 +34,7 @@ const Home = () => {
           noiseIntensity={0.01}
           scanDuration={2.5}
           scanDelay={0.5}
+          enableGyro={true}
           style={{ width: '100%', height: '100%', position: 'absolute' }}
         />
       </div>

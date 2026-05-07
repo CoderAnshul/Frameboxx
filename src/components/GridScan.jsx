@@ -652,18 +652,56 @@ export const GridScan = ({
 
   useEffect(() => {
     if (!enableGyro) return;
+
+    let permissionGranted = false;
+
+    const requestPermission = async () => {
+      if (permissionGranted) return;
+      if (typeof window !== 'undefined' && window.DeviceOrientationEvent && typeof window.DeviceOrientationEvent.requestPermission === 'function') {
+        try {
+          const response = await window.DeviceOrientationEvent.requestPermission();
+          if (response === 'granted') {
+            permissionGranted = true;
+          }
+        } catch (e) {
+          console.error('Gyroscope permission denied:', e);
+        }
+      } else {
+        permissionGranted = true;
+      }
+    };
+
     const handler = e => {
       if (uiFaceActive) return;
+      // Normalizing gamma (tilt left/right) and beta (tilt front/back)
+      // Gamma is typically -90 to 90, Beta is -180 to 180
       const gamma = e.gamma ?? 0;
       const beta = e.beta ?? 0;
-      const nx = THREE.MathUtils.clamp(gamma / 45, -1, 1);
-      const ny = THREE.MathUtils.clamp(-beta / 30, -1, 1);
+      
+      // Map to -1 to 1 range for the shader uniforms
+      // We use a slightly smaller range for better sensitivity
+      const nx = THREE.MathUtils.clamp(gamma / 30, -1, 1);
+      const ny = THREE.MathUtils.clamp((beta - 45) / 30, -1, 1); // Subtracting 45 assumes user is holding phone at an angle
+      
       lookTarget.current.set(nx, ny);
-      tiltTarget.current = THREE.MathUtils.degToRad(gamma) * 0.4;
+      tiltTarget.current = THREE.MathUtils.degToRad(gamma) * 0.5;
+      yawTarget.current = nx * 0.5;
     };
+
+    const onFirstInteraction = () => {
+      requestPermission();
+      window.removeEventListener('click', onFirstInteraction);
+      window.removeEventListener('touchstart', onFirstInteraction);
+    };
+
     window.addEventListener('deviceorientation', handler);
+    window.addEventListener('click', onFirstInteraction);
+    window.addEventListener('touchstart', onFirstInteraction);
+
     return () => {
       window.removeEventListener('deviceorientation', handler);
+      window.removeEventListener('click', onFirstInteraction);
+      window.removeEventListener('touchstart', onFirstInteraction);
     };
   }, [enableGyro, uiFaceActive]);
 
