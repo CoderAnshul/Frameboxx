@@ -15,7 +15,7 @@ const Partnership = () => {
   ]
 
   return (
-    <section id="partnership" className="relative py-24 px-8 w-full max-w-7xl mx-auto overflow-hidden">
+    <section id="partnership" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       {/* Background Decorative Frame */}
       <div className="absolute inset-0 border-[1px] border-white/5 m-4 pointer-events-none rounded-[3rem]">
         <div className="absolute top-0 right-12 w-24 h-[1px] bg-primary"></div>

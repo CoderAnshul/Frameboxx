@@ -12,11 +12,13 @@ import HallOfFame from '../components/HallOfFame'
 import Affiliations from '../components/Affiliations'
 import Admissions from '../components/Admissions'
 import Footer from '../components/Footer'
+import MobileContactBar from '../components/MobileContactBar'
 import GridScan from '../components/GridScan'
 
 const Home = () => {
   return (
     <div className="relative w-full bg-dark">
+      <MobileContactBar />
       {/* Fixed Interactive Grid Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <GridScan
@@ -60,7 +62,7 @@ const Home = () => {
       </div>
 
       {/* Footer / Copyright */}
-      <footer className="relative z-10 py-12 px-8 border-t border-white/5 bg-black/40 backdrop-blur-md">
+      <footer className="relative z-10 py-12 px-4 border-t border-white/5 bg-black/40 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <span className="text-xl font-accent text-white uppercase">Frameboxx<span className="text-primary">.XP</span></span>

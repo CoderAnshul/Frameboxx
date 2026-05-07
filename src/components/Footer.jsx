@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="relative bg-black pt-24 pb-12 px-8 overflow-hidden border-t border-white/5">
+    <footer className="relative bg-black pt-24 pb-12 px-4 overflow-hidden border-t border-white/5">
       {/* Background Decorative Gradient */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 blur-[150px] rounded-full pointer-events-none"></div>
 

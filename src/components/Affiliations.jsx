@@ -39,7 +39,7 @@ const Affiliations = () => {
   ]
 
   return (
-    <section id="affiliations" className="relative py-32 px-8 w-full max-w-7xl mx-auto overflow-hidden">
+    <section id="affiliations" className="relative py-20 lg:py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col items-center text-center mb-16">
         <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4 drop-shadow-[0_0_10px_rgba(255,149,0,0.5)]">Strategic Ecosystem</h3>
         <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-tighter leading-none mb-6">

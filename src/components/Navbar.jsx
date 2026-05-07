@@ -68,7 +68,7 @@ const Navbar = () => {
 
   return (
     <div className={`fixed top-0 left-0 z-[100] w-full transition-all duration-500 px-6 py-4 ${isScrolled ? 'pt-4' : 'pt-8'}`}>
-      <nav className={`max-w-7xl mx-auto flex items-center justify-between px-8 py-3 transition-all duration-500 rounded-full border border-white/10 ${isScrolled ? 'bg-black/60 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.8)]' : 'bg-white/5 backdrop-blur-md'}`}>
+      <nav className={`max-w-7xl mx-auto flex items-center justify-between px-4 py-3 transition-all duration-500 rounded-full border border-white/10 ${isScrolled ? 'bg-black/60 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.8)]' : 'bg-white/5 backdrop-blur-md'}`}>
         
         {/* Logo */}
         <div 
@@ -165,9 +165,20 @@ const Navbar = () => {
           <div className="w-full h-full bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:40px_40px] opacity-20"></div>
         </div>
 
-        <div className="h-full flex flex-col justify-center px-12 md:px-24 relative z-10">
-          <div className="space-y-4 max-w-2xl">
-            <h4 className="text-primary font-bold uppercase tracking-[0.5em] text-[10px] mb-8 animate-in fade-in slide-in-from-left-4 duration-500">Navigation Hub</h4>
+        <div className="h-full flex flex-col justify-center px-8 md:px-24 relative z-10 pt-20">
+          {/* Explicit Close Button for Mobile */}
+          <button 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="absolute top-8 right-8 flex items-center gap-2 group cursor-target"
+          >
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/40 group-hover:text-primary transition-colors">Close</span>
+            <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-primary group-hover:text-dark transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </div>
+          </button>
+
+          <div className="space-y-3 max-w-2xl py-8 overflow-y-auto max-h-[70vh] no-scrollbar">
+            <h4 className="text-primary font-bold uppercase tracking-wide text-[10px] mb-6 animate-in fade-in slide-in-from-left-4 duration-500">Navigation Hub</h4>
             {navLinks.map((link, idx) => (
               <div 
                 key={link.id}
@@ -175,11 +186,11 @@ const Navbar = () => {
               >
                 <button
                   onClick={() => scrollToSection(link.id)}
-                  className={`group flex items-baseline gap-6 text-5xl md:text-7xl font-accent uppercase tracking-tighter transition-all duration-500 text-left cursor-target animate-in fade-in slide-in-from-bottom-8 fill-mode-backwards`}
-                  style={{ animationDelay: `${idx * 100}ms` }}
+                  className={`group flex items-baseline gap-4 text-3xl md:text-5xl font-accent uppercase tracking-tighter transition-all duration-500 text-left cursor-target animate-in fade-in slide-in-from-bottom-8 fill-mode-backwards`}
+                  style={{ animationDelay: `${idx * 50}ms` }}
                 >
-                  <span className="text-white/10 text-xl font-sans font-black tracking-widest group-hover:text-primary transition-colors">0{idx + 1}</span>
-                  <span className={`transition-all duration-500 ${activeSection === link.id ? 'text-primary scale-105' : 'text-white/40 group-hover:text-white group-hover:translate-x-4'}`}>
+                  <span className="text-white/10 text-sm font-sans font-black tracking-widest group-hover:text-primary transition-colors">0{idx + 1}</span>
+                  <span className={`transition-all duration-500 ${activeSection === link.id ? 'text-primary scale-105' : 'text-white/40 group-hover:text-white group-hover:translate-x-3'}`}>
                     {link.name}
                   </span>
                 </button>
@@ -188,15 +199,15 @@ const Navbar = () => {
           </div>
 
           {/* Social Connect Bottom */}
-          <div className="absolute bottom-12 left-12 md:left-24 right-12 flex flex-col md:flex-row justify-between items-end md:items-center gap-8 border-t border-white/5 pt-12">
-            <div className="flex gap-6">
+          <div className="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-t border-white/5 pt-8 bg-black/50 backdrop-blur-sm rounded-t-2xl">
+            <div className="flex flex-wrap gap-4">
               {['Instagram', 'Twitter', 'LinkedIn', 'YouTube'].map(social => (
-                <a key={social} href="#" className="text-gray-500 hover:text-primary text-[10px] uppercase font-bold tracking-[0.2em] transition-all cursor-target">{social}</a>
+                <a key={social} href="#" className="text-gray-500 hover:text-primary text-[9px] uppercase font-bold tracking-[0.2em] transition-all cursor-target">{social}</a>
               ))}
             </div>
-            <div className="text-right">
-              <p className="text-white/20 text-[10px] uppercase tracking-[0.2em]">Contact Us</p>
-              <p className="text-white font-medium">info@frameboxx.in</p>
+            <div className="text-left md:text-right">
+              <p className="text-white/20 text-[9px] uppercase tracking-[0.2em]">Contact Us</p>
+              <p className="text-white font-medium text-sm">info@frameboxx.in</p>
             </div>
           </div>
         </div>

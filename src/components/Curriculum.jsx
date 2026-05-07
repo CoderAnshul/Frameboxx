@@ -66,7 +66,7 @@ const Curriculum = () => {
   const currentYearData = curriculumData.find(d => d.year === activeYear)
 
   return (
-    <section id="curriculum" className="relative py-24 px-8 w-full max-w-7xl mx-auto">
+    <section id="curriculum" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center mb-16">
         <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Academic Roadmap</h3>
         <h2 className="text-4xl md:text-6xl font-accent text-white uppercase tracking-tighter leading-none mb-6">
@@ -83,7 +83,7 @@ const Curriculum = () => {
           <button
             key={year}
             onClick={() => setActiveYear(year)}
-            className={`cursor-target px-8 py-3 rounded-xl border font-accent text-lg transition-all duration-300 ${activeYear === year ? 'bg-primary border-primary text-dark shadow-[0_0_20px_rgba(255,149,0,0.4)]' : 'bg-white/5 border-white/10 text-white hover:bg-white/10'}`}
+            className={`cursor-target px-4 py-3 rounded-xl border font-accent text-lg transition-all duration-300 ${activeYear === year ? 'bg-primary border-primary text-dark shadow-[0_0_20px_rgba(255,149,0,0.4)]' : 'bg-white/5 border-white/10 text-white hover:bg-white/10'}`}
           >
             YEAR {year}
           </button>

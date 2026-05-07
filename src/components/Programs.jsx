@@ -21,7 +21,7 @@ const Programs = () => {
   ]
 
   return (
-    <section id="programs" className="relative py-24 px-8 w-full bg-white/[0.02]">
+    <section id="programs" className="relative py-20 lg:py-24 px-4 w-full bg-white/[0.02]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="space-y-4 max-w-2xl">

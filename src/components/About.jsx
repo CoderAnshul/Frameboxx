@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="relative py-24 px-8 w-full max-w-7xl mx-auto">
+    <section id="about" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left: Branding/Visual */}
         <div className="relative group">

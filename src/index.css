@@ -73,7 +73,7 @@ html.lenis, html.lenis body {
 
 @layer components {
   .btn-primary {
-    @apply relative flex items-center gap-2 px-8 py-3 bg-white text-dark font-bold rounded-full overflow-hidden transition-all hover:bg-white/90;
+    @apply relative flex items-center gap-2 px-4 py-3 bg-white text-dark font-bold rounded-full overflow-hidden transition-all hover:bg-white/90;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
   }
 

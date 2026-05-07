@@ -35,7 +35,7 @@ const HallOfFame = () => {
   ]
 
   return (
-    <section id="halloffame" className="relative py-24 px-8 w-full max-w-7xl mx-auto">
+    <section id="halloffame" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
         <div className="space-y-4 max-w-2xl">
           <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px]">Elite Achievements</h3>

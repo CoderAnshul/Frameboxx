@@ -27,7 +27,7 @@ const Alumni = () => {
   ];
 
   return (
-    <section id="alumni" className="relative py-24 px-8 w-full max-w-7xl mx-auto overflow-hidden">
+    <section id="alumni" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col items-center text-center mb-20">
         <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Placement Network</h3>
         <h2 className="text-4xl md:text-6xl font-accent text-white uppercase tracking-tighter leading-none mb-6">
