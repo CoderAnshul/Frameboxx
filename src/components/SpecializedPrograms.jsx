@@ -60,8 +60,8 @@ const SpecializedPrograms = () => {
     <section id="specialized" className="relative py-20 lg:py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       <div className="text-center mb-20">
         <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Mastery</h3>
-        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-tighter leading-none">
-          Specialized <span className="text-gray-700">Tracks.</span>
+        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none">
+          Specialized <span className="text-primary">Tracks.</span>
         </h2>
       </div>
 

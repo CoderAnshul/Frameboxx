@@ -1,19 +1,24 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import About from '../components/About'
+import QuickApply from '../components/QuickApply'
+import AboutFrameboxx from '../components/AboutFrameboxx'
 import WhyChooseUs from '../components/WhyChooseUs'
 import Partnership from '../components/Partnership'
 import Programs from '../components/Programs'
 import SpecializedPrograms from '../components/SpecializedPrograms'
 import Curriculum from '../components/Curriculum'
 import Alumni from '../components/Alumni'
+import AlumniHighlight from '../components/AlumniHighlight'
 import Testimonials from '../components/Testimonials'
+import VideoTestimonials from '../components/VideoTestimonials'
+import LifeAtFrameboxx from '../components/LifeAtFrameboxx'
 import HallOfFame from '../components/HallOfFame'
 import Affiliations from '../components/Affiliations'
 import Admissions from '../components/Admissions'
 import Footer from '../components/Footer'
 import MobileContactBar from '../components/MobileContactBar'
 import GridScan from '../components/GridScan'
+import StatsSection from '../components/StatsSection'
 
 const Home = () => {
   return (
@@ -48,14 +53,19 @@ const Home = () => {
       {/* Content Sections */}
       <div className="relative z-10 w-full flex flex-col">
         <Hero />
-        <About />
+        <QuickApply />
+        <AboutFrameboxx />
+        <StatsSection />
         <WhyChooseUs />
         <Partnership />
         <Programs />
         <SpecializedPrograms />
         <Curriculum />
         <Alumni />
+        <AlumniHighlight />
         <Testimonials />
+        <VideoTestimonials />
+        <LifeAtFrameboxx />
         <HallOfFame />
         <Affiliations />
         <Admissions />

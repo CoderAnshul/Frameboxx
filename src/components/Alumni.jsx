@@ -31,7 +31,7 @@ const Alumni = () => {
       <div className="flex flex-col items-center text-center mb-20">
         <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Placement Network</h3>
         <h2 className="text-4xl md:text-6xl font-accent text-white uppercase tracking-tighter leading-none mb-6">
-          Our Alumni <span className="text-gray-600">Employed At.</span>
+          Our Alumni <span className="text-primary">Employed At.</span>
         </h2>
         <p className="text-gray-400 max-w-xl text-base font-light leading-relaxed">
           The world's most innovative gaming studios actively recruit from our talent pool.

@@ -44,10 +44,10 @@ const Testimonials = () => {
         <div className="inline-flex items-center gap-3 bg-primary/10 border border-primary/20 px-6 py-2 rounded-full mb-6">
           <span className="text-primary font-bold uppercase tracking-[0.3em] text-[10px]">Student Stories</span>
         </div>
-        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-tighter leading-none mb-6">
-          Voices of <span className="text-gray-700">Success.</span>
+        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none mb-6">
+          Voices of <span className="text-primary">Success.</span>
         </h2>
-        <p className="text-gray-500 text-sm max-w-xl uppercase tracking-widest leading-relaxed">
+        <p className="text-primary text-sm max-w-xl uppercase tracking-widest leading-relaxed">
           From classrooms to world-class studios. Hear from the professionals who started their journey with us.
         </p>
       </div>

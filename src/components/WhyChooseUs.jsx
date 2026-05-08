@@ -42,11 +42,11 @@ const WhyChooseUs = () => {
       <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
         <div className="max-w-2xl">
           <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Education</h3>
-          <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-tighter leading-none">
-            Why Choose <span className="text-gray-700">Us?</span>
+          <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none">
+            Why Choose <span className="text-primary">Us?</span>
           </h2>
         </div>
-        <p className="text-gray-500 text-sm max-w-xs uppercase tracking-widest leading-relaxed">
+        <p className="text-primary text-sm max-w-xs uppercase tracking-widest leading-relaxed">
           The ultimate launchpad for your career in the multi-billion dollar gaming industry.
         </p>
       </div>

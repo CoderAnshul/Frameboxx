@@ -70,9 +70,9 @@ const Curriculum = () => {
       <div className="flex flex-col items-center text-center mb-16">
         <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Academic Roadmap</h3>
         <h2 className="text-4xl md:text-6xl font-accent text-white uppercase tracking-tighter leading-none mb-6">
-          B.Sc in <span className="text-gray-600">Game Art.</span>
+          B.Sc in <span className="text-primary">Game Art.</span>
         </h2>
-        <p className="text-gray-400 max-w-2xl text-sm leading-relaxed">
+        <p className="text-primary max-w-2xl text-sm leading-relaxed">
           A comprehensive 36-month journey designed to prepare students for the fast-growing gaming industry by combining traditional art foundations with cutting-edge technical expertise.
         </p>
       </div>
@@ -129,13 +129,15 @@ const Curriculum = () => {
             ))}
             
             {/* Software Footer for Years 1-3 */}
-            <div className="md:col-span-2 p-6 rounded-2xl bg-white/[0.03] border border-white/5 flex flex-wrap items-center justify-center gap-6">
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Software Covered:</span>
-              {currentYearData.software.map((sw, idx) => (
-                <span key={idx} className="text-xs text-white/60 font-medium px-4 py-1 bg-white/5 rounded-full border border-white/5">
-                  {sw}
-                </span>
-              ))}
+            <div className="md:col-span-2 p-8 rounded-[2rem] bg-black/70 border border-white/5 flex flex-wrap items-center justify-center gap-6 mt-4">
+              <span className="text-[10px] text-primary font-bold uppercase tracking-[0.4em]">Software Covered:</span>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                {currentYearData.software.map((sw, idx) => (
+                  <span key={idx} className="text-xs text-white/80 font-bold px-6 py-2 bg-primary/5 rounded-full border border-primary/20 hover:bg-primary/20 hover:border-primary/40 transition-all duration-300 shadow-[0_0_15px_rgba(255,149,0,0.05)] cursor-default">
+                    {sw}
+                  </span>
+                ))}
+              </div>
             </div>
           </>
         ) : (

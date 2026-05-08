@@ -40,10 +40,10 @@ const HallOfFame = () => {
         <div className="space-y-4 max-w-2xl">
           <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px]">Elite Achievements</h3>
           <h2 className="text-5xl font-accent text-white uppercase tracking-tighter leading-none">
-            Hall Of <br/><span className="text-gray-500">Fame.</span>
+            Hall Of <br/><span className="text-primary">Fame.</span>
           </h2>
         </div>
-        <p className="text-gray-400 max-w-sm text-sm leading-relaxed">
+        <p className="text-primary max-w-sm text-sm leading-relaxed">
           Our students contribute to the biggest AAA titles in the industry. Real people. Real credits.
         </p>
       </div>

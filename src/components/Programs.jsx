@@ -27,10 +27,10 @@ const Programs = () => {
           <div className="space-y-4 max-w-2xl">
             <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-xs">Curriculum</h3>
             <h2 className="text-5xl font-accent text-white uppercase tracking-tighter leading-none">
-              Specialized <br/><span className="text-gray-500">Pathways.</span>
+              Specialized <br/><span className="text-primary">Pathways.</span>
             </h2>
           </div>
-          <p className="text-gray-400 max-w-sm text-sm leading-relaxed">
+          <p className="text-primary max-w-sm text-sm leading-relaxed">
             Every program is strictly aligned with the Godspeed Games production pipeline, ensuring job-readiness from day one.
           </p>
         </div>
@@ -45,7 +45,7 @@ const Programs = () => {
               <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-primary/10 blur-[60px] group-hover:bg-primary/20 transition-all duration-500"></div>
               
               <div className="flex justify-between items-start mb-8">
-                <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold bg-white/5 px-3 py-1 rounded-full border border-white/5">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-primary font-bold bg-white/5 px-3 py-1 rounded-full border border-white/5">
                   {course.duration}
                 </span>
                 <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-500">
