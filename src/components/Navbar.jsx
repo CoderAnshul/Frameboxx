@@ -164,11 +164,11 @@ const Navbar = () => {
           <div className="w-full h-full bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:40px_40px] opacity-20"></div>
         </div>
 
-        <div className="h-full flex flex-col justify-center px-8 md:px-24 relative z-10 pt-20">
+        <div className="h-full flex flex-col justify-start px-8 md:px-24 relative z-10 pt-32">
           {/* Explicit Close Button for Mobile */}
           <button 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="absolute top-8 right-8 flex items-center gap-2 group cursor-target"
+            className="absolute top-8 right-8 flex items-center gap-2 group cursor-target z-20"
           >
             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/40 group-hover:text-primary transition-colors">Close</span>
             <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-primary group-hover:text-dark transition-all">
@@ -176,7 +176,7 @@ const Navbar = () => {
             </div>
           </button>
 
-          <div className="space-y-3 max-w-2xl py-8 overflow-y-auto max-h-[70vh] no-scrollbar">
+          <div className="space-y-3 max-w-2xl pt-8 pb-40 overflow-y-auto no-scrollbar flex-1">
             <h4 className="text-primary font-bold uppercase tracking-wide text-[10px] mb-6 animate-in fade-in slide-in-from-left-4 duration-500">Navigation Hub</h4>
             {navLinks.map((link, idx) => (
               <div 
@@ -188,7 +188,7 @@ const Navbar = () => {
                   className={`group flex items-baseline gap-4 text-3xl md:text-5xl font-heading uppercase tracking-tighter transition-all duration-500 text-left cursor-target animate-in fade-in slide-in-from-bottom-8 fill-mode-backwards`}
                   style={{ animationDelay: `${idx * 50}ms` }}
                 >
-                  <span className="text-white/10 text-sm font-sans font-black tracking-widest group-hover:text-primary transition-colors">0{idx + 1}</span>
+                  <span className="text-white/10 text-sm font-sans font-black tracking-widest group-hover:text-primary transition-colors">{idx + 1 < 10 ? `0${idx + 1}` : idx + 1}</span>
                   <span className={`transition-all duration-500 ${activeSection === link.id ? 'text-primary scale-105' : 'text-white/40 group-hover:text-white group-hover:translate-x-3'}`}>
                     {link.name}
                   </span>
@@ -198,7 +198,7 @@ const Navbar = () => {
           </div>
 
           {/* Social Connect Bottom */}
-          <div className="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-t border-white/5 pt-8 bg-black/50 backdrop-blur-sm rounded-t-2xl">
+          <div className="absolute bottom-0 left-0 right-0 px-8 md:px-24 py-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-t border-white/5 bg-black/80 backdrop-blur-xl z-20">
             <div className="flex flex-wrap gap-4">
               {['Instagram', 'Twitter', 'LinkedIn', 'YouTube'].map(social => (
                 <a key={social} href="#" className="text-gray-500 hover:text-primary text-[9px] uppercase font-bold tracking-[0.2em] transition-all cursor-target">{social}</a>
