@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           {/* Brand Column */}
           <div className="md:col-span-4 space-y-6">
-            <h2 className="text-3xl font-accent text-white uppercase tracking-tighter">
+            <h2 className="text-3xl font-heading text-white uppercase tracking-tighter">
               Frameboxx<span className="text-primary">.XP</span>
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">

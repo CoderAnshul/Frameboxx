@@ -41,7 +41,7 @@ const HallOfFame = () => {
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
         <div className="space-y-4 max-w-2xl">
           <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px]">Elite Achievements</h3>
-          <h2 className="text-5xl font-accent text-white uppercase tracking-tighter leading-none">
+          <h2 className="text-5xl font-heading text-white uppercase tracking-tighter leading-none">
             Hall Of <br/><span className="text-primary">Fame.</span>
           </h2>
         </div>

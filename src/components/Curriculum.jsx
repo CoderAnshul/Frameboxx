@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import godspeedLogo from '../assets/affiliations/industry/Godspeed Games.webp'
 
 const Curriculum = () => {
   const [activeYear, setActiveYear] = useState(1)
@@ -69,9 +70,24 @@ const Curriculum = () => {
     <section id="curriculum" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center mb-16">
         <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Academic Roadmap</h3>
-        <h2 className="text-4xl md:text-6xl font-accent text-white uppercase tracking-tighter leading-none mb-6">
+        <h2 className="text-4xl md:text-6xl font-heading text-white uppercase tracking-tighter leading-none mb-4">
           B.Sc in <span className="text-primary">Game Art.</span>
         </h2>
+        
+        {/* Collaboration Logo */}
+        <div className="flex flex-col items-center mb-16 animate-in fade-in zoom-in-95 duration-1000">
+          <div className="flex flex-col md:flex-row items-center gap-10 bg-[#343434] px-10 py-8 rounded-[4rem] border border-primary/20 shadow-[0_0_50px_rgba(255,149,0,0.2)] relative group transition-all duration-700 hover:scale-[1.02] hover:border-primary/40">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="text-center md:text-left relative z-10">
+              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40 block mb-3">Collaborative Project</span>
+              <span className="text-xl md:text-2xl font-heading uppercase tracking-[0.1em] text-primary drop-shadow-[0_0_20px_rgba(255,149,0,0.5)]">Godspeed Games Production</span>
+            </div>
+            <div className="hidden md:block w-[1px] h-12 bg-white/10 relative z-10"></div>
+            <div className="relative z-10 p-4 bg-black/50 rounded-[2.5rem] border border-white/10 shadow-inner">
+              <img src={godspeedLogo} alt="Godspeed Games" className="h-12 md:h-16 w-auto brightness-125 transition-transform duration-500 group-hover:scale-110" />
+            </div>
+          </div>
+        </div>
         <p className="text-primary max-w-2xl text-sm leading-relaxed">
           A comprehensive 36-month journey designed to prepare students for the fast-growing gaming industry by combining traditional art foundations with cutting-edge technical expertise.
         </p>
@@ -83,7 +99,7 @@ const Curriculum = () => {
           <button
             key={year}
             onClick={() => setActiveYear(year)}
-            className={`cursor-target px-4 py-3 rounded-xl border font-accent text-lg transition-all duration-300 ${activeYear === year ? 'bg-primary border-primary text-dark shadow-[0_0_20px_rgba(255,149,0,0.4)]' : 'bg-white/5 border-white/10 text-white hover:bg-white/10'}`}
+            className={`cursor-target px-4 py-3 rounded-xl border font-heading text-lg transition-all duration-300 ${activeYear === year ? 'bg-primary border-primary text-dark shadow-[0_0_20px_rgba(255,149,0,0.4)]' : 'bg-white/5 border-white/10 text-white hover:bg-white/10'}`}
           >
             YEAR {year}
           </button>
@@ -97,7 +113,7 @@ const Curriculum = () => {
             {currentYearData.semesters.map((sem, idx) => (
               <div key={idx} className="glass-card p-10 rounded-3xl bg-black/70 border border-white/10 flex flex-col gap-8 relative overflow-hidden group cursor-target">
                 <div className="absolute top-0 right-0 w-24 h-1 bg-primary/20"></div>
-                <h4 className="text-2xl font-accent text-white uppercase tracking-wide border-b border-white/10 pb-4">
+                <h4 className="text-2xl font-heading text-white uppercase tracking-wide border-b border-white/10 pb-4">
                   {sem.title}
                 </h4>
                 
@@ -145,7 +161,7 @@ const Curriculum = () => {
             {currentYearData.specialized.map((spec, idx) => (
               <div key={idx} className="glass-card p-10 rounded-3xl bg-black/70 border border-primary/20 shadow-2xl group cursor-target">
                 <div className="flex justify-between items-start mb-6">
-                  <h4 className="text-2xl font-accent text-white uppercase">{spec.title}</h4>
+                  <h4 className="text-2xl font-heading text-white uppercase">{spec.title}</h4>
                   <div className="w-8 h-8 rounded-full border border-primary/30 flex items-center justify-center">
                     <div className="w-2 h-2 bg-primary rounded-full animate-ping"></div>
                   </div>

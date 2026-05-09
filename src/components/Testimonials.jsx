@@ -44,7 +44,7 @@ const Testimonials = () => {
         <div className="inline-flex items-center gap-3 bg-primary/10 border border-primary/20 px-6 py-2 rounded-full mb-6">
           <span className="text-primary font-bold uppercase tracking-[0.3em] text-[10px]">Student Stories</span>
         </div>
-        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none mb-6">
+        <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none mb-6">
           Voices of <span className="text-primary">Success.</span>
         </h2>
         <p className="text-primary text-sm max-w-xl uppercase tracking-widest leading-relaxed">
@@ -66,7 +66,7 @@ const Testimonials = () => {
                   "{testimonials[0].content}"
                 </p>
                 <div className="pt-8 border-t border-white/20">
-                  <h4 className="text-3xl font-accent text-primary uppercase tracking-widest">{testimonials[0].name}</h4>
+                  <h4 className="text-3xl font-heading text-primary uppercase tracking-widest">{testimonials[0].name}</h4>
                   <p className="text-gray-400 text-sm font-bold uppercase tracking-[0.2em] mt-2">{testimonials[0].role}</p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ const Testimonials = () => {
                   "{item.content}"
                 </p>
                 <div className="pt-6 border-t border-white/10">
-                  <h4 className="text-xl font-accent text-white uppercase tracking-wider group-hover:text-primary transition-colors">{item.name}</h4>
+                  <h4 className="text-xl font-heading text-white uppercase tracking-wider group-hover:text-primary transition-colors">{item.name}</h4>
                   <p className="text-gray-400 text-[11px] font-bold uppercase tracking-[0.2em] mt-1">{item.role}</p>
                 </div>
              </div>
@@ -109,7 +109,7 @@ const Testimonials = () => {
                   "{item.content}"
                 </p>
                 <div className="pt-6 border-t border-white/10">
-                  <h4 className="text-xl font-accent text-primary uppercase tracking-wider">{item.name}</h4>
+                  <h4 className="text-xl font-heading text-primary uppercase tracking-wider">{item.name}</h4>
                   <p className="text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-2">{item.role}</p>
                 </div>
               </div>

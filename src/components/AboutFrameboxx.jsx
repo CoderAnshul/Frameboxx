@@ -11,7 +11,9 @@ const AboutFrameboxx = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1024px)", () => {
       // Pin the image container while the text is scrolling
       ScrollTrigger.create({
         trigger: containerRef.current,
@@ -20,18 +22,18 @@ const AboutFrameboxx = () => {
         pin: imageRef.current,
         pinSpacing: false,
         invalidateOnRefresh: true,
-        markers: false, // Set to true for debugging
+        markers: false,
       });
-    }, sectionRef);
+    });
 
-    return () => ctx.revert();
+    return () => mm.revert();
   }, []);
 
   return (
     <section ref={sectionRef} id="about-frameboxx" className="relative py-24 px-4 w-full max-w-7xl mx-auto overflow-visible">
       <div className="flex flex-col items-center mb-16">
         <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">The Institute</h3>
-        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none text-center">
+        <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none text-center">
           About <span className="text-primary">Frameboxx.</span>
         </h2>
       </div>
@@ -89,7 +91,7 @@ const AboutFrameboxx = () => {
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 bg-primary p-6 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 cursor-default hidden md:block">
               <p className="text-dark font-black text-2xl leading-none uppercase tracking-tighter">India's Most</p>
-              <p className="text-dark font-accent text-3xl leading-none uppercase">Trusted</p>
+              <p className="text-dark font-heading text-3xl leading-none uppercase">Trusted</p>
             </div>
           </div>
         </div>

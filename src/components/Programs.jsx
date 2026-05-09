@@ -26,7 +26,7 @@ const Programs = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="space-y-4 max-w-2xl">
             <h3 className="text-primary font-bold uppercase tracking-[0.3em] text-xs">Curriculum</h3>
-            <h2 className="text-5xl font-accent text-white uppercase tracking-tighter leading-none">
+            <h2 className="text-5xl font-heading text-white uppercase tracking-tighter leading-none">
               Specialized <br/><span className="text-primary">Pathways.</span>
             </h2>
           </div>
@@ -53,7 +53,7 @@ const Programs = () => {
                 </div>
               </div>
 
-              <h4 className="text-2xl font-accent text-white mb-4 uppercase tracking-tight">{course.title}</h4>
+              <h4 className="text-2xl font-heading text-white mb-4 uppercase tracking-tight">{course.title}</h4>
               <p className="text-accent text-sm mb-8 leading-relaxed flex-grow">
                 {course.desc}
               </p>

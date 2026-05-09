@@ -185,7 +185,7 @@ const Navbar = () => {
               >
                 <button
                   onClick={() => scrollToSection(link.id)}
-                  className={`group flex items-baseline gap-4 text-3xl md:text-5xl font-accent uppercase tracking-tighter transition-all duration-500 text-left cursor-target animate-in fade-in slide-in-from-bottom-8 fill-mode-backwards`}
+                  className={`group flex items-baseline gap-4 text-3xl md:text-5xl font-heading uppercase tracking-tighter transition-all duration-500 text-left cursor-target animate-in fade-in slide-in-from-bottom-8 fill-mode-backwards`}
                   style={{ animationDelay: `${idx * 50}ms` }}
                 >
                   <span className="text-white/10 text-sm font-sans font-black tracking-widest group-hover:text-primary transition-colors">0{idx + 1}</span>

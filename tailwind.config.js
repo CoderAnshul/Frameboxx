@@ -17,8 +17,7 @@ export default {
         }
       },
       fontFamily: {
-        heading: ['Robus', 'sans-serif'],
-        accent: ['GreatsRacing', 'cursive'],
+        heading: ['Born2bSporty', 'sans-serif'],
         sans: ['Outfit', 'sans-serif'],
       }
     },

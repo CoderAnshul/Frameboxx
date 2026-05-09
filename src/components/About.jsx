@@ -9,19 +9,19 @@ const About = () => {
             <div className="flex flex-col gap-8">
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center p-3">
-                  <span className="text-3xl font-accent text-primary">F</span>
+                  <span className="text-3xl font-heading text-primary">F</span>
                 </div>
                 <div className="h-[1px] flex-grow bg-white/10"></div>
                 <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center p-3">
-                  <span className="text-3xl font-accent text-white">B</span>
+                  <span className="text-3xl font-heading text-white">B</span>
                 </div>
                 <div className="h-[1px] flex-grow bg-white/10"></div>
                 <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center p-3">
-                  <span className="text-3xl font-accent text-gray-500">G</span>
+                  <span className="text-3xl font-heading text-gray-500">G</span>
                 </div>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-accent text-white leading-tight uppercase tracking-tighter">
+              <h2 className="text-4xl md:text-5xl font-heading text-white leading-tight uppercase tracking-tighter">
                 A Triple Threat in <span className="text-primary">Gaming Education.</span>
               </h2>
               

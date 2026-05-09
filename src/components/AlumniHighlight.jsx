@@ -59,7 +59,7 @@ const AlumniHighlight = () => {
       <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
         <div className="space-y-4 max-w-2xl">
           <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">Alumni Impact</h3>
-          <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none">
+          <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none">
             Success <span className="text-primary">Spotlight.</span>
           </h2>
         </div>

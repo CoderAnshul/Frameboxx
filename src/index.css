@@ -39,11 +39,12 @@ html.lenis, html.lenis body {
 }
 
 @font-face {
-  font-family: 'GreatsRacing';
-  src: url('/fonts/GreatsRacingFreeForPersonalItalic-BLLM8.otf') format('opentype');
+  font-family: 'Born2bSporty';
+  src: url('/fonts/born2bsporty-fs.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 
 
 @layer base {

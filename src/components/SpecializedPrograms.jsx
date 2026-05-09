@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import bspLogo from '../assets/affiliations/industry/bsp_logo_newupdated.webp'
 
 const SpecializedPrograms = () => {
   const [activeTab, setActiveTab] = useState(0)
@@ -52,10 +53,24 @@ const SpecializedPrograms = () => {
   ]
 
   return (
-    <section id="specialized" className="relative py-20 lg:py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
+    <section id="specialized" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
+      <div className="flex flex-col items-center mb-16 animate-in fade-in slide-in-from-top-8 duration-1000">
+        <div className="inline-flex flex-col md:flex-row items-center gap-8 bg-[#343434] p-6 md:p-8 rounded-[3rem] border border-primary/20 shadow-[0_0_40px_rgba(255,149,0,0.15)] relative group transition-all duration-500 hover:border-primary/40">
+          <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div className="flex flex-col items-center md:items-start relative z-10">
+            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/50 mb-2">Developed in Strategic Partnership with</span>
+            <p className="text-xl md:text-2xl font-heading uppercase tracking-widest text-primary drop-shadow-[0_0_15px_rgba(255,149,0,0.6)]">Industry Alignment</p>
+          </div>
+          <div className="hidden md:block w-[2px] h-12 bg-white/10 relative z-10"></div>
+          <div className="p-4 bg-black/60 rounded-[2rem] border border-white/10 shadow-inner group-hover:shadow-primary/20 transition-all duration-500">
+            <img src={bspLogo} alt="Backstage Pass Logo" className="h-12 md:h-16 w-auto relative z-10 transition-transform duration-500 group-hover:scale-110" />
+          </div>
+        </div>
+      </div>
+
       <div className="text-center mb-20">
         <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Mastery</h3>
-        <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none">
+        <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none">
           Specialized <span className="text-primary">Tracks.</span>
         </h2>
       </div>
@@ -99,7 +114,7 @@ const SpecializedPrograms = () => {
                <div className="absolute bottom-6 left-8 right-8">
                   <div className="space-y-1">
                     <p className="text-primary font-bold text-[10px] uppercase tracking-widest">Global Standard</p>
-                    <h3 className="text-2xl md:text-3xl font-accent text-white uppercase tracking-tight">{programs[activeTab].title}</h3>
+                    <h3 className="text-2xl md:text-3xl font-heading text-white uppercase tracking-tight">{programs[activeTab].title}</h3>
                   </div>
                </div>
             </div>

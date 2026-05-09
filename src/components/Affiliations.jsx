@@ -67,7 +67,7 @@ const Affiliations = () => {
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16 space-y-4">
           <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">Strategic Ecosystem</h3>
-          <h2 className="text-5xl md:text-8xl font-accent text-white uppercase leading-none">
+          <h2 className="text-5xl md:text-8xl font-heading text-white uppercase leading-none">
             Global <span className="text-primary">Alliances.</span>
           </h2>
           <p className="text-gray-400 max-w-2xl text-sm md:text-base mt-4 font-light">
@@ -99,7 +99,7 @@ const Affiliations = () => {
         <div ref={containerRef} className="relative min-h-[400px]">
           <div className="text-center mb-12">
             <p className="text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-2">Current Category</p>
-            <h4 className="text-3xl font-accent text-white uppercase">{sections[activeCategory].category}</h4>
+            <h4 className="text-3xl font-heading text-white uppercase">{sections[activeCategory].category}</h4>
             <p className="text-gray-500 text-sm mt-2">{sections[activeCategory].desc}</p>
           </div>
 

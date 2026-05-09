@@ -90,7 +90,7 @@ const VideoTestimonials = () => {
       <div className="max-w-7xl mx-auto px-4 mb-12 flex flex-col items-center text-center gap-4">
         <div className="space-y-2">
           <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">Student Spotlight</h3>
-          <h2 className="text-4xl md:text-6xl font-accent text-white uppercase leading-none">
+          <h2 className="text-4xl md:text-6xl font-heading text-white uppercase leading-none">
             Video <span className="text-primary">Reviews.</span>
           </h2>
         </div>
@@ -132,7 +132,7 @@ const VideoTestimonials = () => {
 
               {/* Name Label */}
               <div className="absolute bottom-6 left-6">
-                  <p className="text-white font-accent text-xl uppercase tracking-wider translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  <p className="text-white font-heading text-xl uppercase tracking-wider translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                       {review.name}'s <span className="text-primary text-sm font-sans font-bold italic">Journey</span>
                   </p>
               </div>

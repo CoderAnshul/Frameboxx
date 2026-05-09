@@ -28,7 +28,7 @@ const Partnership = () => {
         <div className="glass-card p-10 rounded-3xl bg-black/60 border border-white/10 relative overflow-hidden group cursor-target">
           <div className="absolute top-0 right-0 w-32 h-1 bg-primary/30"></div>
           <h4 className="text-primary font-bold uppercase tracking-widest text-[10px] mb-6">Institution Profile</h4>
-          <h3 className="text-3xl font-accent text-white uppercase mb-6 leading-none">Frameboxx <br/><span className="text-primary">2.0 Animation.</span></h3>
+          <h3 className="text-3xl font-heading text-white uppercase mb-6 leading-none">Frameboxx <br/><span className="text-primary">2.0 Animation.</span></h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-8">
             A premier institution dedicated to redefining creative training with a vision to become the global leader in design education. With over 45,000+ students, we've expanded across Animation, VFX, Game Asset Design, and more.
           </p>
@@ -43,7 +43,7 @@ const Partnership = () => {
         <div className="glass-card p-10 rounded-3xl bg-black/60 border border-white/10 relative overflow-hidden group cursor-target">
           <div className="absolute top-0 right-0 w-32 h-1 bg-primary/30"></div>
           <h4 className="text-primary font-bold uppercase tracking-widest text-[10px] mb-6">Studio Profile</h4>
-          <h3 className="text-3xl font-accent text-white uppercase mb-6 leading-none">Godspeed <br/><span className="text-primary">Games Studio.</span></h3>
+          <h3 className="text-3xl font-heading text-white uppercase mb-6 leading-none">Godspeed <br/><span className="text-primary">Games Studio.</span></h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-8">
             Pune's leading development and QA studio with a powerhouse team of 200+ professionals. Having delivered over 1,000+ games across platforms, we bring real studio production pipelines directly to the classroom.
           </p>
@@ -63,7 +63,7 @@ const Partnership = () => {
             <span className="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">Collaborative Excellence</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-accent text-white uppercase tracking-tighter leading-none">
+          <h2 className="text-4xl md:text-5xl font-heading text-white uppercase tracking-tighter leading-none">
             A Visionary Academic <br/><span className="text-primary">Partnership.</span>
           </h2>
           

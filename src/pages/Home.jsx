@@ -18,31 +18,45 @@ import Admissions from '../components/Admissions'
 import Footer from '../components/Footer'
 import MobileContactBar from '../components/MobileContactBar'
 import GridScan from '../components/GridScan'
+import Aurora from '../components/Aurora'
 import StatsSection from '../components/StatsSection'
 
 const Home = () => {
   return (
     <div className="relative w-full bg-dark">
       <MobileContactBar />
-      {/* Fixed Interactive Grid Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <GridScan
-           sensitivity={0.55}
-          lineThickness={0.4}
-          linesColor="#3b3a3aff"
-          lineOpacity={0.2}
-          gridScale={0.1}
-          scanColor="#FF9FFC"
-          scanOpacity={0.5}
-          enablePost
-          bloomIntensity={0.6}
-          chromaticAberration={0.001}
-          noiseIntensity={0.01}
-          scanDuration={2.5}
-          scanDelay={0.5}
-          enableGyro={true}
-          style={{ width: '100%', height: '100%', position: 'absolute' }}
-        />
+      {/* Fixed Interactive Backgrounds */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        {/* Desktop: GridScan */}
+        <div className="hidden lg:block w-full h-full">
+          <GridScan
+            sensitivity={0.55}
+            lineThickness={0.4}
+            linesColor="#3b3a3aff"
+            lineOpacity={0.2}
+            gridScale={0.1}
+            scanColor="#FF9FFC"
+            scanOpacity={0.5}
+            enablePost
+            bloomIntensity={0.6}
+            chromaticAberration={0.001}
+            noiseIntensity={0.01}
+            scanDuration={2.5}
+            scanDelay={0.5}
+            enableGyro={true}
+            style={{ width: '100%', height: '100%', position: 'absolute' }}
+          />
+        </div>
+
+        {/* Mobile/Tablet: Aurora */}
+        <div className="block lg:hidden w-full h-full opacity-60">
+          <Aurora
+            colorStops={["#F97316", "#ee8b47", "#efe346"]}
+            blend={1}
+            amplitude={0.5}
+            speed={1}
+          />
+        </div>
       </div>
       
       {/* Background Overlays */}
@@ -57,11 +71,11 @@ const Home = () => {
         <QuickApply />
         <AboutFrameboxx />
         <StatsSection />
+        <SpecializedPrograms />
+        <Curriculum />
         <WhyChooseUs />
         <Partnership />
         <Programs />
-        <SpecializedPrograms />
-        <Curriculum />
         <Alumni />
         <AlumniHighlight />
         <Testimonials />
@@ -77,7 +91,7 @@ const Home = () => {
       <footer className="relative z-10 py-12 px-4 border-t border-white/5 bg-black/40 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-accent text-white uppercase">Frameboxx<span className="text-primary">.XP</span></span>
+            <span className="text-xl font-heading text-white uppercase">Frameboxx<span className="text-primary">.XP</span></span>
           </div>
           <p className="text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold">
             © 2026 Frameboxx 2.0 x Backstage Pass x Godspeed Games. All rights reserved.

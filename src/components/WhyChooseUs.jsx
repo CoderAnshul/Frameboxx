@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
       <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
         <div className="max-w-2xl">
           <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Education</h3>
-          <h2 className="text-5xl md:text-7xl font-accent text-white uppercase tracking-normal leading-none">
+          <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none">
             Why Choose <span className="text-primary">Us?</span>
           </h2>
         </div>
@@ -63,7 +63,7 @@ const WhyChooseUs = () => {
                 {item.icon}
               </div>
               <div className="space-y-3">
-                <h4 className="text-xl font-accent text-white uppercase tracking-wide group-hover:text-primary transition-colors">{item.title}</h4>
+                <h4 className="text-xl font-heading text-white uppercase tracking-wide group-hover:text-primary transition-colors">{item.title}</h4>
                 <p className="text-gray-400 text-xs leading-relaxed font-light">
                   {item.desc}
                 </p>

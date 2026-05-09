@@ -37,7 +37,7 @@ const ConnectWithUs = () => {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-12 space-y-4">
-          <h2 className="form-element text-4xl md:text-7xl font-accent text-white uppercase leading-none">
+          <h2 className="form-element text-4xl md:text-7xl font-heading text-white uppercase leading-none">
             Connect <span className="text-primary">With Us</span>
           </h2>
           <div className="form-element w-24 h-1 bg-red-600 rounded-full"></div>
