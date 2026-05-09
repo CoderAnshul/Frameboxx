@@ -75,12 +75,11 @@ const Navbar = () => {
           className="flex items-center gap-2 cursor-pointer group cursor-target relative z-[110]"
           onClick={() => scrollToSection('home')}
         >
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform">
-            <span className="text-dark font-black text-xl">F</span>
-          </div>
-          <span className="text-xl font-accent tracking-tighter text-white uppercase hidden sm:block">
-            Frameboxx<span className="text-primary">.XP</span>
-          </span>
+          <img 
+            src="/logo.png" 
+            alt="Logo" 
+            className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+          />
         </div>
 
         {/* Desktop Links (Visible only on Large Screens) */}

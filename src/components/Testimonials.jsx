@@ -55,36 +55,37 @@ const Testimonials = () => {
       {/* Desktop Grid Layout */}
       <div className="hidden lg:grid grid-cols-2 gap-8 items-start">
         {/* Featured Large Testimonial */}
-        <div className="col-span-2 glass-card p-12 rounded-3xl bg-black/60 border border-primary/30 relative overflow-hidden group cursor-target shadow-[0_0_50px_rgba(255,149,0,0.1)]">
-           <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] blur-3xl pointer-events-none"></div>
-           <div className="flex flex-col gap-8 relative z-10">
-              <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-dark transition-all duration-500">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.017C5.46472 8 5.017 8.44772 5.017 9V12C5.017 12.5523 4.56929 13 4.017 13H2.017V21H5.017Z"/></svg>
+        <div className="col-span-2 glass-card p-12 rounded-3xl bg-black/80 border border-primary/40 relative overflow-hidden group cursor-target shadow-[0_0_50px_rgba(255,149,0,0.1)] hover:shadow-[0_0_60px_rgba(255,149,0,0.2)] transition-all duration-500">
+           <div className="absolute top-0 right-0 w-48 h-48 bg-primary/10 rounded-bl-[100px] blur-3xl pointer-events-none group-hover:bg-primary/20 transition-all duration-700"></div>
+           <div className="flex flex-col md:flex-row gap-10 relative z-10">
+              <div className="w-20 h-20 rounded-2xl bg-primary/20 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-dark transition-all duration-500 shadow-xl shadow-primary/10">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.017C5.46472 8 5.017 8.44772 5.017 9V12C5.017 12.5523 4.56929 13 4.017 13H2.017V21H5.017Z"/></svg>
               </div>
               <div className="space-y-8 flex-1">
-                <p className="text-3xl font-medium text-white/90 leading-relaxed italic">
+                <p className="text-3xl md:text-4xl font-medium text-white leading-tight italic tracking-tight">
                   "{testimonials[0].content}"
                 </p>
-                <div className="pt-8 border-t border-white/10">
-                  <h4 className="text-2xl font-accent text-primary uppercase tracking-wider">{testimonials[0].name}</h4>
-                  <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mt-2">{testimonials[0].role}</p>
+                <div className="pt-8 border-t border-white/20">
+                  <h4 className="text-3xl font-accent text-primary uppercase tracking-widest">{testimonials[0].name}</h4>
+                  <p className="text-gray-400 text-sm font-bold uppercase tracking-[0.2em] mt-2">{testimonials[0].role}</p>
                 </div>
               </div>
            </div>
         </div>
 
         {testimonials.slice(1).map((item, idx) => (
-          <div key={idx} className="glass-card p-10 rounded-3xl bg-black/40 border border-white/5 hover:border-white/20 transition-all duration-500 group cursor-target flex flex-col gap-8 relative overflow-hidden">
+          <div key={idx} className="glass-card p-10 rounded-3xl bg-black/60 border border-white/10 hover:border-primary/40 transition-all duration-500 group cursor-target flex flex-col gap-8 relative overflow-hidden hover:shadow-[0_0_40px_rgba(255,149,0,0.1)] h-full">
+             <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all duration-700"></div>
              <div className="space-y-6 relative z-10">
-                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-primary/40 group-hover:text-primary transition-colors">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.017C5.46472 8 5.017 8.44772 5.017 9V12C5.017 12.5523 4.56929 13 4.017 13H2.017V21H5.017Z"/></svg>
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-primary/60 group-hover:bg-primary group-hover:text-dark transition-all duration-500">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.017C5.46472 8 5.017 8.44772 5.017 9V12C5.017 12.5523 4.56929 13 4.017 13H2.017V21H5.017Z"/></svg>
                 </div>
-                <p className="text-gray-400 text-base leading-relaxed italic">
+                <p className="text-gray-100 text-lg leading-relaxed italic font-medium">
                   "{item.content}"
                 </p>
-                <div className="pt-6 border-t border-white/5">
-                  <h4 className="text-lg font-accent text-white uppercase tracking-wide group-hover:text-primary transition-colors">{item.name}</h4>
-                  <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest mt-1">{item.role}</p>
+                <div className="pt-6 border-t border-white/10">
+                  <h4 className="text-xl font-accent text-white uppercase tracking-wider group-hover:text-primary transition-colors">{item.name}</h4>
+                  <p className="text-gray-400 text-[11px] font-bold uppercase tracking-[0.2em] mt-1">{item.role}</p>
                 </div>
              </div>
           </div>
@@ -100,16 +101,16 @@ const Testimonials = () => {
         >
           {testimonials.map((item, idx) => (
             <div key={idx} className="min-w-full snap-center">
-              <div className="glass-card p-8 rounded-3xl bg-black/60 border border-white/10 flex flex-col gap-6">
-                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
+              <div className="glass-card p-8 rounded-3xl bg-black/80 border border-primary/20 flex flex-col gap-6 shadow-xl shadow-black/50">
+                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary shadow-lg shadow-primary/5">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.017C5.46472 8 5.017 8.44772 5.017 9V12C5.017 12.5523 4.56929 13 4.017 13H2.017V21H5.017Z"/></svg>
                 </div>
-                <p className="text-lg font-medium text-white/90 leading-relaxed italic">
+                <p className="text-xl font-medium text-white leading-relaxed italic">
                   "{item.content}"
                 </p>
                 <div className="pt-6 border-t border-white/10">
                   <h4 className="text-xl font-accent text-primary uppercase tracking-wider">{item.name}</h4>
-                  <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest mt-1">{item.role}</p>
+                  <p className="text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-2">{item.role}</p>
                 </div>
               </div>
             </div>

@@ -7,7 +7,6 @@ const SpecializedPrograms = () => {
     {
       title: "Advanced Program in Game Development",
       duration: "240 Hrs",
-      fee: "₹ 2,25,000",
       type: "Advanced",
       intro: "An intensive one-year program designed for students and professionals aiming to specialize in game development. Guided by experienced mentors, learners gain practical exposure through real-world development scenarios.",
       learn: ["C++ | Adv C++ & STL | C#", "Unity 3D - Basic & Advanced", "Unreal Engine 5 - Blueprints & C++", "Graphics Programming with OpenGL", "AI Programming", "Game Networking", "Portfolio Development"],
@@ -17,7 +16,6 @@ const SpecializedPrograms = () => {
     {
       title: "Expert Program in Game Development with Unity",
       duration: "120 Hrs",
-      fee: "₹ 1,48,000",
       type: "Expert",
       intro: "An immersive program crafted to build a solid foundation in programming and game creation. Empowering learners to design, develop, and deploy interactive games using industry-standard tools.",
       learn: ["C# Programming", "Unity 3D Engine Architecture", "Advanced Physics & AI", "Mobile Game Optimization", "Asset Pipeline Integration", "Multiplayer Fundamentals"],
@@ -27,7 +25,6 @@ const SpecializedPrograms = () => {
     {
       title: "Expert Program in Game Development with Unreal",
       duration: "120 Hrs",
-      fee: "₹ 1,48,000",
       type: "Expert",
       intro: "A power-packed program designed to help aspiring developers master one of the world's most powerful game engines. Combines technical depth with creative freedom.",
       learn: ["C++ | Adv C++ & STL", "Introduction to Unreal Engine", "Unreal Blueprints", "Gameplay Programming", "AI and Behaviour Programming", "UI Programming and Game Systems", "Portfolio Development"],
@@ -37,7 +34,6 @@ const SpecializedPrograms = () => {
     {
       title: "Expert Program in Game Design & Production",
       duration: "120 Hrs",
-      fee: "₹ 1,48,000",
       type: "Expert",
       intro: "An intensive program crafted to equip aspiring designers with the creative and technical skills to design compelling game experiences. Covers everything from ideation to production.",
       learn: ["Game History & Genres", "Conceptualization & Design Thinking", "Pitch Deck & Presentation", "Spec Creation & GDD", "Scope & Production Planning", "Unreal Blueprints", "Portfolio Development"],
@@ -47,7 +43,6 @@ const SpecializedPrograms = () => {
     {
       title: "Expert Program in VR Application Development",
       duration: "120 Hrs",
-      fee: "₹ 1,48,000",
       type: "Expert",
       intro: "An intensive, hands-on program crafted to prepare students for the fast-growing field of Virtual Reality. Integrates strong foundations in programming and 3D engines.",
       learn: ["VR Development Principles", "Unity/Unreal VR Integration", "3D UI/UX Design", "Haptic Feedback Systems", "Metaverse Architecture", "Spatial Audio Design"],
@@ -78,7 +73,7 @@ const SpecializedPrograms = () => {
                 <span className={`text-[10px] font-black uppercase tracking-widest ${activeTab === idx ? 'text-dark/60' : 'text-primary'}`}>
                   {prog.type}
                 </span>
-                <span className={`text-[10px] font-bold ${activeTab === idx ? 'text-dark/60' : 'text-gray-500'}`}>
+                <span className={`text-[10px] font-bold ${activeTab === idx ? 'text-dark' : 'text-primary'}`}>
                   {prog.duration}
                 </span>
               </div>
@@ -101,13 +96,10 @@ const SpecializedPrograms = () => {
                  alt="Program Visual"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-               <div className="absolute bottom-6 left-8 right-8 flex justify-between items-end">
+               <div className="absolute bottom-6 left-8 right-8">
                   <div className="space-y-1">
                     <p className="text-primary font-bold text-[10px] uppercase tracking-widest">Global Standard</p>
                     <h3 className="text-2xl md:text-3xl font-accent text-white uppercase tracking-tight">{programs[activeTab].title}</h3>
-                  </div>
-                  <div className="bg-primary px-6 py-2 rounded-xl text-dark font-black text-lg shadow-[0_0_30px_#FF9500]">
-                    {programs[activeTab].fee}
                   </div>
                </div>
             </div>

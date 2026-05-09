@@ -33,6 +33,7 @@ uniform float uScanSoftness;
 uniform float uPhaseTaper;
 uniform float uScanDuration;
 uniform float uScanDelay;
+uniform float uLineOpacity;
 varying vec2 vUv;
 
 uniform float uScanStarts[8];
@@ -244,7 +245,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
     }
 
   float lineVis = lineMask;
-  vec3 gridCol = uLinesColor * lineVis * fade;
+  vec3 gridCol = uLinesColor * (lineVis * uLineOpacity) * fade;
   vec3 scanCol = uScanColor * combinedPulse;
   vec3 scanAura = uScanColor * combinedAura;
 
@@ -253,7 +254,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
   float n = fract(sin(dot(gl_FragCoord.xy + vec2(iTime * 123.4), vec2(12.9898,78.233))) * 43758.5453123);
   color += (n - 0.5) * uNoise;
   color = clamp(color, 0.0, 1.0);
-  float alpha = clamp(max(lineVis, combinedPulse), 0.0, 1.0);
+  float alpha = clamp(max(lineVis * uLineOpacity, combinedPulse), 0.0, 1.0);
   float gx = 1.0 - smoothstep(tx * 2.0, tx * 2.0 + aax * 2.0, ax);
   float gy = 1.0 - smoothstep(ty * 2.0, ty * 2.0 + aay * 2.0, ay);
   float halo = max(gx, gy) * fade;
@@ -275,6 +276,7 @@ export const GridScan = ({
   sensitivity = 0.55,
   lineThickness = 1,
   linesColor = '#2F293A',
+  lineOpacity = 0.5,
   scanColor = '#FF9FFC',
   scanOpacity = 0.4,
   gridScale = 0.1,
@@ -444,6 +446,7 @@ export const GridScan = ({
       uYaw: { value: 0 },
       uLineThickness: { value: lineThickness },
       uLinesColor: { value: srgbColor(linesColor) },
+      uLineOpacity: { value: lineOpacity },
       uScanColor: { value: srgbColor(scanColor) },
       uGridScale: { value: gridScale },
       uLineStyle: { value: lineStyle === 'dashed' ? 1 : lineStyle === 'dotted' ? 2 : 0 },
@@ -576,6 +579,7 @@ export const GridScan = ({
     sensitivity,
     lineThickness,
     linesColor,
+    lineOpacity,
     scanColor,
     scanOpacity,
     gridScale,
@@ -607,6 +611,7 @@ export const GridScan = ({
       const u = m.uniforms;
       u.uLineThickness.value = lineThickness;
       u.uLinesColor.value.copy(srgbColor(linesColor));
+      u.uLineOpacity.value = lineOpacity;
       u.uScanColor.value.copy(srgbColor(scanColor));
       u.uGridScale.value = gridScale;
       u.uLineStyle.value = lineStyle === 'dashed' ? 1 : lineStyle === 'dotted' ? 2 : 0;
@@ -632,6 +637,7 @@ export const GridScan = ({
   }, [
     lineThickness,
     linesColor,
+    lineOpacity,
     scanColor,
     gridScale,
     lineStyle,

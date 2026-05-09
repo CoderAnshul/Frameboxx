@@ -54,7 +54,7 @@ const Programs = () => {
               </div>
 
               <h4 className="text-2xl font-accent text-white mb-4 uppercase tracking-tight">{course.title}</h4>
-              <p className="text-gray-500 text-sm mb-8 leading-relaxed flex-grow">
+              <p className="text-accent text-sm mb-8 leading-relaxed flex-grow">
                 {course.desc}
               </p>
 

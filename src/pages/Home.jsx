@@ -28,14 +28,15 @@ const Home = () => {
       <div className="fixed inset-0 z-0 pointer-events-none">
         <GridScan
            sensitivity={0.55}
-          lineThickness={1}
-          linesColor="#5d5c5fff"
+          lineThickness={0.4}
+          linesColor="#3b3a3aff"
+          lineOpacity={0.2}
           gridScale={0.1}
           scanColor="#FF9FFC"
-          scanOpacity={0.6}
+          scanOpacity={0.5}
           enablePost
           bloomIntensity={0.6}
-          chromaticAberration={0.002}
+          chromaticAberration={0.001}
           noiseIntensity={0.01}
           scanDuration={2.5}
           scanDelay={0.5}
