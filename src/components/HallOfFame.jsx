@@ -57,11 +57,11 @@ const HallOfFame = () => {
             className="group relative flex flex-col bg-black/80 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl cursor-target"
           >
             {/* Game Poster Background */}
-            <div className="h-[450px] relative overflow-hidden">
+            <div className="relative overflow-hidden">
               <img 
                 src={item.poster} 
                 alt={item.game} 
-                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                className="w-full h-auto group-hover:scale-110 transition-all duration-700"
               />
             </div>
 

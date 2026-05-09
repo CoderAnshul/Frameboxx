@@ -103,7 +103,7 @@ const SpecializedPrograms = () => {
         <div className="lg:col-span-8">
           <div className="glass-card rounded-3xl bg-black/60 border border-white/10 overflow-hidden relative min-h-[600px] flex flex-col">
             {/* Visual Header */}
-            <div className="h-64 relative overflow-hidden">
+            <div className="aspect-video md:h-64 relative overflow-hidden">
                <img 
                  src={programs[activeTab].image} 
                  className="w-full h-full object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000 animate-in fade-in zoom-in-95 duration-700" 

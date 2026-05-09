@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right Content: Visual/Image */}
-        <div className="lg:col-span-5 relative group min-h-[500px]">
+        <div className="lg:col-span-5 relative group aspect-video lg:aspect-auto lg:min-h-[500px]">
           <div className="absolute inset-0 bg-primary/20 blur-[100px] opacity-0 group-hover:opacity-30 transition-opacity duration-1000"></div>
           <div className="relative h-full w-full rounded-3xl overflow-hidden border border-white/10">
             <img 
