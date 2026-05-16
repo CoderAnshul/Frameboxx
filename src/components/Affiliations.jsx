@@ -41,7 +41,7 @@ const Affiliations = () => {
       ]
     },
     {
-      category: "Global & Finance",
+      category: "loan partners",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       ),
@@ -98,9 +98,9 @@ const Affiliations = () => {
         {/* Content Area */}
         <div ref={containerRef} className="relative min-h-[400px]">
           <div className="text-center mb-12">
-            <p className="text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-2">Current Category</p>
+            {/* <p className="text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-2">Current Category</p> */}
             <h4 className="text-3xl font-heading text-white uppercase">{sections[activeCategory].category}</h4>
-            <p className="text-gray-500 text-sm mt-2">{sections[activeCategory].desc}</p>
+            {/* <p className="text-gray-500 text-sm mt-2">{sections[activeCategory].desc}</p> */}
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -112,7 +112,7 @@ const Affiliations = () => {
                 <img 
                   src={logo} 
                   alt="Partner" 
-                  className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
                 
                 {/* Decorative glow */}

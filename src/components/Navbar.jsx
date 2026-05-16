@@ -67,18 +67,25 @@ const Navbar = () => {
   const isLargeDesktop = windowWidth >= 1300
 
   return (
-    <div className={`fixed top-0 left-0 z-[100] w-full transition-all duration-500 px-6 py-4 ${isScrolled ? 'pt-4' : 'pt-8'}`}>
-      <nav className={`max-w-7xl mx-auto flex items-center justify-between px-4 py-3 transition-all duration-500 rounded-full border border-white/10 ${isScrolled ? 'bg-black/60 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.8)]' : 'bg-white/5 backdrop-blur-md'}`}>
+    <div className={`fixed top-0 left-0 z-[80] w-full transition-all duration-500 px-4 min-[1300px]:px-6 py-4 ${isScrolled ? 'pt-4' : 'pt-4 min-[1300px]:pt-8'}`}>
+      <nav className={`max-w-7xl mx-auto flex items-center justify-between transition-all duration-500 
+        px-0 min-[1300px]:px-4 py-2 min-[1300px]:py-3 
+        min-[1300px]:rounded-full min-[1300px]:border min-[1300px]:border-white/10 
+        ${isScrolled 
+          ? 'px-4 bg-black/60 backdrop-blur-2xl rounded-full shadow-[0_8px_32px_rgba(0,0,0,0.8)]' 
+          : 'bg-transparent min-[1300px]:bg-white/5 min-[1300px]:backdrop-blur-md'
+        }
+      `}>
         
         {/* Logo */}
         <div 
-          className="flex items-center gap-2 cursor-pointer group cursor-target relative z-[110]"
+          className="flex items-center gap-2 cursor-pointer group cursor-target relative z-10"
           onClick={() => scrollToSection('home')}
         >
           <img 
             src="/logo.png" 
             alt="Logo" 
-            className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+            className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
           />
         </div>
 
@@ -144,7 +151,7 @@ const Navbar = () => {
           {/* Hamburger Menu Toggle (Visible for < 1300px) */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`p-2 rounded-xl transition-all relative z-[110] cursor-target ${windowWidth < 1300 ? 'flex' : 'hidden md:hidden'} ${isMobileMenuOpen ? 'bg-primary text-dark' : 'bg-white/5 text-white hover:bg-white/10'}`}
+            className={`p-2 rounded-xl transition-all relative z-10 cursor-target ${windowWidth < 1300 ? 'flex' : 'hidden md:hidden'} ${isMobileMenuOpen ? 'bg-primary text-dark' : 'bg-white/5 text-white hover:bg-white/10'}`}
           >
             {isMobileMenuOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>

@@ -8,9 +8,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           {/* Brand Column */}
           <div className="md:col-span-4 space-y-6">
-            <h2 className="text-3xl font-heading text-white uppercase tracking-tighter">
-              Frameboxx<span className="text-primary">.XP</span>
-            </h2>
+            <div className="flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="Frameboxx Logo" 
+                className="h-12 w-auto object-contain"
+              />
+            </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
               Empowering the next generation of game artists and developers with industry-direct training and elite studio partnerships.
             </p>

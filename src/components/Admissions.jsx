@@ -147,11 +147,7 @@ const Admissions = () => {
               />
             </div>
 
-            {/* Message Area */}
-            <div className="space-y-3">
-              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 ml-4">How can we help you?</label>
-              <textarea name="message" rows="4" className="w-full bg-[#1a1425] border border-white/5 rounded-[2rem] px-8 py-6 text-white focus:border-primary/50 outline-none transition-all resize-none placeholder:text-gray-700" placeholder="Message"></textarea>
-            </div>
+
 
             {/* Submit Button */}
             <button 

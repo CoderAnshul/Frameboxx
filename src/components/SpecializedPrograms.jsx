@@ -55,15 +55,15 @@ const SpecializedPrograms = () => {
   return (
     <section id="specialized" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col items-center mb-16 animate-in fade-in slide-in-from-top-8 duration-1000">
-        <div className="inline-flex flex-col md:flex-row items-center gap-8 bg-[#343434] p-6 md:p-8 rounded-[3rem] border border-primary/20 shadow-[0_0_40px_rgba(255,149,0,0.15)] relative group transition-all duration-500 hover:border-primary/40">
-          <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div className="inline-flex flex-col md:flex-row items-center gap-8 bg-slate-50 p-6 md:p-10 rounded-[4rem] border border-primary/20 shadow-[0_0_50px_rgba(255,149,0,0.2)] relative group transition-all duration-700 hover:scale-[1.02] hover:border-primary/40 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           <div className="flex flex-col items-center md:items-start relative z-10">
-            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/50 mb-2">Developed in Strategic Partnership with</span>
-            <p className="text-xl md:text-2xl font-heading uppercase tracking-widest text-primary drop-shadow-[0_0_15px_rgba(255,149,0,0.6)]">Industry Alignment</p>
+            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-500 mb-2 block">Developed in Strategic Partnership with</span>
+            <p className="text-xl md:text-2xl font-heading uppercase tracking-[0.1em] text-primary drop-shadow-sm">Industry Alignment</p>
           </div>
-          <div className="hidden md:block w-[2px] h-12 bg-white/10 relative z-10"></div>
-          <div className="p-4 bg-black/60 rounded-[2rem] border border-white/10 shadow-inner group-hover:shadow-primary/20 transition-all duration-500">
-            <img src={bspLogo} alt="Backstage Pass Logo" className="h-12 md:h-16 w-auto relative z-10 transition-transform duration-500 group-hover:scale-110" />
+          <div className="hidden md:block w-[1px] h-16 bg-black/10 relative z-10"></div>
+          <div className="relative z-10 p-2 md:p-4">
+            <img src={bspLogo} alt="Backstage Pass Logo" className="h-20 md:h-28 w-auto mix-blend-multiply transition-transform duration-500 group-hover:scale-110" style={{ filter: 'grayscale(1) invert(1) brightness(1.5) contrast(1.5)' }} />
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import WhyChooseUs from '../components/WhyChooseUs'
 import Partnership from '../components/Partnership'
 import Programs from '../components/Programs'
 import SpecializedPrograms from '../components/SpecializedPrograms'
+import BSPPartnership from '../components/BSPPartnership'
 import Curriculum from '../components/Curriculum'
 import Alumni from '../components/Alumni'
 import AlumniHighlight from '../components/AlumniHighlight'
@@ -71,11 +72,12 @@ const Home = () => {
         <QuickApply />
         <AboutFrameboxx />
         <StatsSection />
-        <SpecializedPrograms />
         <Curriculum />
-        <WhyChooseUs />
         <Partnership />
-        <Programs />
+        <SpecializedPrograms />
+        <BSPPartnership />
+        <WhyChooseUs />
+        {/* <Programs /> */}
         <Alumni />
         <AlumniHighlight />
         <Testimonials />
@@ -91,10 +93,10 @@ const Home = () => {
       <footer className="relative z-10 py-12 px-4 border-t border-white/5 bg-black/40 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-heading text-white uppercase">Frameboxx<span className="text-primary">.XP</span></span>
+            <span className="text-xl font-heading text-white uppercase">Frameboxx</span>
           </div>
           <p className="text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold">
-            © 2026 Frameboxx 2.0 x Backstage Pass x Godspeed Games. All rights reserved.
+            © 2026 Frameboxx  x Backstage Pass x Godspeed Games. All rights reserved.
           </p>
           {/* <div className="flex gap-6">
             <a href="#" className="text-gray-500 hover:text-white text-[10px] uppercase tracking-widest font-bold transition-colors">Privacy Policy</a>

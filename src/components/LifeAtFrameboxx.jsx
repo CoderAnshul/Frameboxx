@@ -83,13 +83,13 @@ const LifeAtFrameboxx = () => {
   return (
     <section ref={sectionRef} id="life-at-frameboxx" className="relative py-24 px-4 w-full max-w-[1500px] mx-auto">
       <div className="flex flex-col items-center text-center mb-16 space-y-4">
-        <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">The Culture</h3>
+        {/* <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">The Culture</h3> */}
         <h2 className="text-5xl md:text-8xl font-heading text-white uppercase tracking-normal leading-none">
           Life at <span className="text-primary">Frameboxx.</span>
         </h2>
-        <p className="text-gray-500 text-[10px] uppercase tracking-[0.4em] font-black mt-4">
+        {/* <p className="text-gray-500 text-[10px] uppercase tracking-[0.4em] font-black mt-4">
           Click to expand gallery
-        </p>
+        </p> */}
       </div>
 
       {/* Tabs */}

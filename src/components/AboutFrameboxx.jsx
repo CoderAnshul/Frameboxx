@@ -32,7 +32,6 @@ const AboutFrameboxx = () => {
   return (
     <section ref={sectionRef} id="about-frameboxx" className="relative py-24 px-4 w-full max-w-7xl mx-auto overflow-visible">
       <div className="flex flex-col items-center mb-16">
-        <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">The Institute</h3>
         <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none text-center">
           About <span className="text-primary">Frameboxx.</span>
         </h2>
@@ -44,7 +43,7 @@ const AboutFrameboxx = () => {
           <div className="glass-card p-8 md:p-12 rounded-[2.5rem] bg-black/40 border border-white/10 backdrop-blur-3xl space-y-8 shadow-2xl">
             <div className="space-y-6">
               <p className="text-gray-200 text-lg md:text-xl leading-relaxed font-light">
-                <span className="text-white font-bold">Frameboxx Institute of Emerging Media</span> is one of India's most trusted training brands in Animation, VFX, Game Art, Design and Development, AR/VR, Metaverse, Fashion & Interior Design, Graphics, and Web Design. We have built a strong national presence with <span className="text-primary font-bold">50+ centres</span> across India and a thriving community of <span className="text-primary font-bold">40,000+ trained students</span>.
+                <span className="text-white font-bold">Frameboxx</span> is one of India's most trusted training brands in Animation, VFX, Game Art, Design and Development, AR/VR, Metaverse, Fashion & Interior Design, Graphics, and Web Design. We have built a strong national presence with <span className="text-primary font-bold">50+ centres</span> across India and a thriving community of <span className="text-primary font-bold">40,000+ trained students</span>.
               </p>
               
               <p className="text-gray-300 text-base leading-relaxed font-light">

@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
     <section id="whychooseus" className="relative py-20 lg:py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
         <div className="max-w-2xl">
-          <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Education</h3>
+          {/* <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Education</h3> */}
           <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none">
             Why Choose <span className="text-primary">Us?</span>
           </h2>

@@ -26,7 +26,7 @@ const About = () => {
               </h2>
               
               <p className="text-gray-400 text-lg leading-relaxed font-light">
-                The strategic alliance between <span className="text-white font-medium">Frameboxx 2.0</span>, <span className="text-white font-medium">Backstage Pass Institute</span>, and <span className="text-white font-medium">Godspeed Games</span> represents the pinnacle of specialized gaming education in India.
+                The strategic alliance between <span className="text-white font-medium">Frameboxx </span>, <span className="text-white font-medium">Backstage Pass Institute</span>, and <span className="text-white font-medium">Godspeed Games</span> represents the pinnacle of specialized gaming education in India.
               </p>
             </div>
             
