@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative z-10 w-full h-screen flex flex-col items-center justify-center text-center px-2 md:px-6 overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-black">
+      <div className="absolute inset-0 -z-10 bg-black lg:hidden">
         <Beams
           beamWidth={3}
           beamHeight={30}
