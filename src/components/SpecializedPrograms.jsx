@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import bspLogo from '../assets/affiliations/industry/bsp_logo_newupdated.webp'
+import bspLogo from '../assets/logos/backstage.png'
 
 const SpecializedPrograms = () => {
   const [activeTab, setActiveTab] = useState(0)
@@ -55,15 +55,15 @@ const SpecializedPrograms = () => {
   return (
     <section id="specialized" className="relative py-20 lg:py-24 px-4 w-full max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col items-center mb-16 animate-in fade-in slide-in-from-top-8 duration-1000">
-        <div className="inline-flex flex-col md:flex-row items-center gap-8 bg-slate-50 p-6 md:p-10 rounded-[4rem] border border-primary/20 shadow-[0_0_50px_rgba(255,149,0,0.2)] relative group transition-all duration-700 hover:scale-[1.02] hover:border-primary/40 overflow-hidden">
+        <div className="inline-flex flex-col md:flex-row items-center gap-3 md:gap-8 bg-slate-50 px-6 py-4 md:p-10 rounded-[2rem] md:rounded-[4rem] border border-primary/20 shadow-[0_0_50px_rgba(255,149,0,0.2)] relative group transition-all duration-700 hover:scale-[1.02] hover:border-primary/40 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          <div className="flex flex-col items-center md:items-start relative z-10">
-            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-500 mb-2 block">Developed in Strategic Partnership with</span>
+          <div className="flex flex-col items-center text-center relative z-10">
+            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-500 mb-1 md:mb-2 block">Developed in Strategic Partnership with</span>
             <p className="text-xl md:text-2xl font-heading uppercase tracking-[0.1em] text-primary drop-shadow-sm">Industry Alignment</p>
           </div>
           <div className="hidden md:block w-[1px] h-16 bg-black/10 relative z-10"></div>
-          <div className="relative z-10 p-2 md:p-4">
-            <img src={bspLogo} alt="Backstage Pass Logo" className="h-20 md:h-28 w-auto mix-blend-multiply transition-transform duration-500 group-hover:scale-110" style={{ filter: 'grayscale(1) invert(1) brightness(1.5) contrast(1.5)' }} />
+          <div className="relative z-10 p-0 md:p-4 flex items-center justify-center">
+            <img src={bspLogo} alt="Backstage Pass Logo" className="h-12 md:h-16 w-auto transition-transform duration-500 group-hover:scale-110" />
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ const SpecializedPrograms = () => {
       <div className="text-center mb-20">
         <h3 className="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Elite Mastery</h3>
         <h2 className="text-5xl md:text-7xl font-heading text-white uppercase tracking-normal leading-none">
-          Specialized <span className="text-primary">Tracks.</span>
+          Specialized <span className="text-primary">Courses.</span>
         </h2>
       </div>
 

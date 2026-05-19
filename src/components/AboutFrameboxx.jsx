@@ -42,20 +42,20 @@ const AboutFrameboxx = () => {
         <div className="relative z-10 order-2 lg:order-1">
           <div className="glass-card p-8 md:p-12 rounded-[2.5rem] bg-black/40 border border-white/10 backdrop-blur-3xl space-y-8 shadow-2xl">
             <div className="space-y-6">
-              <p className="text-gray-200 text-lg md:text-xl leading-relaxed font-light">
-                <span className="text-white font-bold">Frameboxx</span> is one of India's most trusted training brands in Animation, VFX, Game Art, Design and Development, AR/VR, Metaverse, Fashion & Interior Design, Graphics, and Web Design. We have built a strong national presence with <span className="text-primary font-bold">50+ centres</span> across India and a thriving community of <span className="text-primary font-bold">40,000+ trained students</span>.
+              <p className="text-gray-300 text-base leading-relaxed font-normal">
+                <span className="text-white">Frameboxx</span> is one of India's most trusted training brands in Animation, VFX, Game Art, Design and Development, AR/VR, Metaverse, Fashion & Interior Design, Graphics, and Web Design. We have built a strong national presence with <span className="text-primary">50+ centres</span> across India and a thriving community of <span className="text-primary">40,000+ trained students</span>.
               </p>
               
-              <p className="text-gray-300 text-base leading-relaxed font-light">
-                Founded by <span className="text-white font-medium">Mr. Rajesh R. Turakhia</span>, a respected industry leader with over 30 years of experience, Frameboxx Institute of Emerging Media is driven by a vision to create skilled, job-ready creative professionals.
+              <p className="text-gray-300 text-base leading-relaxed font-normal">
+                Founded by <span className="text-white">Mr. Rajesh R. Turakhia</span>, a respected industry leader with over 30 years of experience, Frameboxx Institute of Emerging Media is driven by a vision to create skilled, job-ready creative professionals.
               </p>
 
-              <p className="text-gray-300 text-base leading-relaxed font-light">
+              <p className="text-gray-300 text-base leading-relaxed font-normal">
                 Our programs are designed and delivered by industry professionals, ensuring real-world learning, studio-level exposure, and strong portfolio development. We offer Degree, Diploma, and Master's programs aligned with the latest industry trends and technology.
               </p>
 
-              <p className="text-gray-300 text-base leading-relaxed font-light italic border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-xl">
-                With dedicated placement support, updated curriculum, live projects, expert mentoring, and a creative learning environment, Frameboxx Institute of Emerging Media empowers learners to build successful careers in Media and Creative Arts. <span className="text-primary font-bold not-italic">Choose Frameboxx, where creativity meets career-ready skills.</span>
+              <p className="text-gray-300 text-base leading-relaxed font-normal border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-xl">
+                With dedicated placement support, updated curriculum, live projects, expert mentoring, and a creative learning environment, Frameboxx Institute of Emerging Media empowers learners to build successful careers in Media and Creative Arts. <span className="text-primary">Choose Frameboxx, where creativity meets career-ready skills.</span>
               </p>
             </div>
 

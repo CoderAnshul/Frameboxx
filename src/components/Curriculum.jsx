@@ -174,14 +174,14 @@ const Curriculum = () => {
         
         {/* Collaboration Logo */}
         <div className="flex flex-col items-center mb-16 animate-in fade-in zoom-in-95 duration-1000">
-          <div className="flex flex-col md:flex-row items-center gap-10 bg-slate-50 px-10 py-8 rounded-[4rem] border border-primary/20 shadow-[0_0_50px_rgba(255,149,0,0.2)] relative group transition-all duration-700 hover:scale-[1.02] hover:border-primary/40 overflow-hidden">
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-10 bg-slate-50 px-6 py-4 md:px-10 md:py-8 rounded-[2rem] md:rounded-[4rem] border border-primary/20 shadow-[0_0_50px_rgba(255,149,0,0.2)] relative group transition-all duration-700 hover:scale-[1.02] hover:border-primary/40 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div className="text-center md:text-left relative z-10">
-              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-500 block mb-3">Collaborative Project</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-500 block mb-1 md:mb-3">Collaborative Project</span>
               <span className="text-xl md:text-2xl font-heading uppercase tracking-[0.1em] text-primary drop-shadow-sm">Godspeed Games Production</span>
             </div>
             <div className="hidden md:block w-[1px] h-16 bg-black/10 relative z-10"></div>
-            <div className="relative z-10 p-2 md:p-4">
+            <div className="relative z-10 p-0 md:p-4">
               <img src={godspeedLogo} alt="Godspeed Games" className="h-24 md:h-32 w-auto mix-blend-multiply transition-transform duration-500 group-hover:scale-110" style={{ filter: 'grayscale(1) invert(1) brightness(1.5) contrast(1.5)' }} />
             </div>
           </div>
