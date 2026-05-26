@@ -36,7 +36,7 @@ const CustomSelect = ({ options, placeholder, onChange, value }) => {
         }`}
       >
         <span className={`text-sm tracking-wide ${value ? 'text-white' : 'text-gray-500'}`}>
-          {value || placeholder}
+          {(value && typeof value === 'object' ? (value.name || value.label) : value) || placeholder}
         </span>
         <svg 
           className={`w-3 h-3 text-gray-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary' : ''}`} 
@@ -50,21 +50,27 @@ const CustomSelect = ({ options, placeholder, onChange, value }) => {
       {isOpen && (
         <div 
           ref={listRef}
-          className="absolute z-[100] top-full left-0 w-full bg-[#1a1425] border border-white/10 rounded-3xl mt-2 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl overflow-hidden"
+          className="absolute z-[100] top-full left-0 w-full bg-[#1a1425] border border-white/10 rounded-3xl mt-2 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl overflow-visible"
         >
           <div className="max-h-[250px] overflow-y-auto custom-scrollbar">
-            {options.map((option, idx) => (
-              <div
-                key={idx}
-                onClick={() => {
-                  onChange(option);
-                  setIsOpen(false);
-                }}
-                className="px-8 py-3 text-sm text-gray-400 hover:text-white hover:bg-primary/10 transition-colors cursor-pointer border-l-2 border-transparent hover:border-primary"
-              >
-                {option}
+            {options && options.length > 0 ? (
+              options.map((option, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => {
+                    onChange(option);
+                    setIsOpen(false);
+                  }}
+                  className="px-8 py-3 text-sm text-gray-400 hover:text-white hover:bg-primary/10 transition-colors cursor-pointer border-l-2 border-transparent hover:border-primary"
+                >
+                  {option && typeof option === 'object' ? (option.name || option.label) : option}
+                </div>
+              ))
+            ) : (
+              <div className="px-8 py-4 text-xs text-gray-500 italic text-center">
+                No options available
               </div>
-            ))}
+            )}
           </div>
         </div>
       )}
