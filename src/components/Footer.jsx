@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-4 space-y-6">
             <div className="flex items-center">
               <img 
-                src="/logo.png" 
+                src={`${import.meta.env.BASE_URL}logo.png`} 
                 alt="Frameboxx Logo" 
                 className="h-12 w-auto object-contain"
               />

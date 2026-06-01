@@ -105,7 +105,7 @@ const SpecializedPrograms = () => {
             {/* Visual Header */}
             <div className="aspect-video md:h-64 relative overflow-hidden">
                <img 
-                 src={programs[activeTab].image} 
+                 src={`${import.meta.env.BASE_URL}${programs[activeTab].image.slice(1)}`} 
                  className="w-full h-full object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000 animate-in fade-in zoom-in-95 duration-700" 
                  key={programs[activeTab].image}
                  alt="Program Visual"

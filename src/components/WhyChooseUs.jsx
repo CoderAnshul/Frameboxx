@@ -77,7 +77,7 @@ const WhyChooseUs = () => {
           <div className="absolute inset-0 bg-primary/20 blur-[100px] opacity-0 group-hover:opacity-30 transition-opacity duration-1000"></div>
           <div className="relative h-full w-full rounded-3xl overflow-hidden border border-white/10">
             <img 
-              src="/gaming_students_lab_session_1778158183643.png" 
+              src={`${import.meta.env.BASE_URL}gaming_students_lab_session_1778158183643.png`} 
               alt="Gaming Students Lab" 
               className="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
             />

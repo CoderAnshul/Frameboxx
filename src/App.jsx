@@ -31,7 +31,7 @@ function App() {
   }, [])
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <TargetCursor 
         spinDuration={2}
         hideDefaultCursor

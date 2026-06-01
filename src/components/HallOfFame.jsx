@@ -59,7 +59,7 @@ const HallOfFame = () => {
             {/* Game Poster Background */}
             <div className="relative overflow-hidden">
               <img 
-                src={item.poster} 
+                src={`${import.meta.env.BASE_URL}${item.poster.slice(1)}`} 
                 alt={item.game} 
                 className="w-full h-auto group-hover:scale-110 transition-all duration-700"
               />
@@ -75,7 +75,7 @@ const HallOfFame = () => {
       <div className="grid grid-cols-1 gap-6 mt-6">
          <div className="group relative bg-black/80 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-500 cursor-target">
             <img 
-              src="/hof/dipomay.png" 
+              src={`${import.meta.env.BASE_URL}hof/dipomay.png`} 
               className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02]"
               alt="Destroy All Humans 2"
             />

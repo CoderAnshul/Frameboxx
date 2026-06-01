@@ -83,7 +83,7 @@ const Navbar = () => {
           onClick={() => scrollToSection('home')}
         >
           <img 
-            src="/logo.png" 
+            src={`${import.meta.env.BASE_URL}logo.png`} 
             alt="Logo" 
             className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
           />

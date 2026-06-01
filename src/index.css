@@ -33,14 +33,14 @@ html.lenis, html.lenis body {
 
 @font-face {
   font-family: 'Robus';
-  src: url('/fonts/Robus-BWqOd.otf') format('opentype');
+  src: url('../public/fonts/Robus-BWqOd.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Born2bSporty';
-  src: url('/fonts/born2bsporty-fs.otf') format('opentype');
+  src: url('../public/fonts/born2bsporty-fs.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
